@@ -3,7 +3,21 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <link rel="stylesheet" href="td4.css" />
-		
+		<script> function afficheVille() {  
+			let nomVilleChoisie = document.getElementById('Ville')
+			let villes = element.classList
+			 for (i=0; i<…; i++) {
+				if (villes[i].id == nomVilleChoisie) 
+				{
+ // garder l'element visible -> ELEMENT.style.display= "";
+ 
+				} else 
+				{
+ // cacher l'element -> ELEMENT.style.display= "none";
+ …
+				}
+ }
+ }
 	</head>
 	<body>
 		<header>
@@ -11,19 +25,23 @@
 			<h2>TD n°4 Technologies web – Application météo </h2>
 			<br/>
 		</header>
-
+			<select name="choixVille" id="Ville" onchange=" afficheVille()">
+			<option value="1">Niort</option>
+			<option value="2">Rio de Janeiro</option>
+			<option value="3">Reykjavic</option>
+			</select>
 		<div class="flex">
-			<div class="flex1">
+			<div class="flex1" id=nomDeLaVille class="ville">
 				<h2>Niort</h2>
 				<p>12°, pluvieux</p>
 				<img src="pluvieux.png" width="20%"/>
 			</div>
-			<div class="flex1" >
+			<div class="flex1" id=nomDeLaVille class="ville">
 				<h2>Rio de Janeiro</h2>
 				<p>29°, orageux</p>
 				<img src="orageux.png" width="20%"/>
 			</div>
-			<div class="flex1">
+			<div class="flex1" id=nomDeLaVille class="ville">
 				<h2>Reykjavik</h2>
 				<p>-10°, ensoleillé</p>
 				<img src="ensoleille.png" width="20%"/>
